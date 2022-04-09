@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Weather from "./Weather";
 
@@ -32,6 +32,7 @@ export default function Search() {
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Enter a city" onChange={updateCity} />
         <input type="submit" value="Search" />
+        <input type="submit" value="Use my Location" />
       </form>
       {temperature !== null ? (
         <Weather

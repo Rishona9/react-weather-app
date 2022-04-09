@@ -1,8 +1,9 @@
-import react, { useState } from "react";
+import React from "react";
+import "./Weather.css";
 
 export default function Weather(props) {
   return (
-    <ul className="ShowWeather">
+    <ul className="showWeather">
       <li>Temperature: {Math.round(props.temperature)}°F</li>
       <li>Description: {props.description} </li>
       <li>Humidity: {props.humidity}% </li>
