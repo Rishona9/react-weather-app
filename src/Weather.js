@@ -7,7 +7,7 @@ export default function Weather() {
       <div className="row">
         <div className="col-3">
           <input
-            type="search"
+            type="text"
             placeholder="Enter city..."
             autocomplete="off"
             class="form-control"
@@ -20,17 +20,19 @@ export default function Weather() {
           <input type="submit" value="Current Location" />
         </div>
       </div>
+      <p>Monday 4:20pm</p>
       <p>Cleveland</p>
       <p>65° F</p>
-      <p>Raining</p>
+      <p>☀️</p>
+      <p>Sunny</p>
       <div className="row">
-        <div className="col-2">
+        <div className="col-1">
           <p>Wind: 10mph</p>
         </div>
-        <div className="col-2">
+        <div className="col-1">
           <p>Humidity: 45%</p>
         </div>
-        <div className="col-2">
+        <div className="col-1">
           <p>Feels Like: 58° F</p>
         </div>
       </div>
@@ -53,19 +55,19 @@ export default function Weather() {
       </div>
       <div className="row">
         <div className="col-1">
-          <p>Sunny</p>
+          <p>☀️</p>
         </div>
         <div className="col-1">
-          <p>Cloudy</p>
+          <p>⛅</p>
         </div>
         <div className="col-1">
-          <p>Sunny</p>
+          <p>🌧️</p>
         </div>
         <div className="col-1">
-          <p>Raining</p>
+          <p>⛅</p>
         </div>
         <div className="col-1">
-          <p>Cloudy</p>
+          <p>☁️</p>
         </div>
       </div>
       <div className="row">
