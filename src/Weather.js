@@ -28,9 +28,9 @@ export default function Weather() {
       </form>
       <p className="dayTime">Monday 4:20pm</p>
       <p className="city">Cleveland</p>
-      <p className="temperature">65° F</p>
+      <p className="temperature">65°F</p>
       <p>☀️</p>
-      <p>Sunny</p>
+      <p className="description">Sunny</p>
 
       <div className="row windHumidity">
         <div className="col-3">
@@ -40,7 +40,7 @@ export default function Weather() {
           <p>Humidity: 45%</p>
         </div>
         <div className="col-3">
-          <p className="feelsLike">Feels Like: 58° F</p>
+          <p className="feelsLike">Feels Like: 58°F</p>
         </div>
       </div>
       <div className="row forecastDays">

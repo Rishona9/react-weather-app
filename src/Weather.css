@@ -1,45 +1,62 @@
 .Weather {
-  border: 2px solid black;
+  border: 3px solid navy;
   border-radius: 15px;
-  max-width: 600px;
+  max-width: 550px;
   text-align: center;
   margin: 20px auto;
+  background: linear-gradient(
+    178deg,
+    rgb(156, 177, 248) 7.5%,
+    rgb(153, 247, 243) 93.1%
+  );
+  font-weight: 575;
 }
 .Weather .cityInput {
-  border: 1px solid black;
+  border: 1px solid navy;
   border-radius: 25px;
   padding: 1px 6px 1px 6px;
   margin: 10px 0px 20px 10px;
+  background-color: white;
 }
 .Weather .btn-primary {
-  border: 1px solid black;
+  border: 1px solid navy;
   border-radius: 25px;
   background-color: white;
   color: black;
   margin: 10px 5px 20px 0px;
   padding: 1px 6px 1px 6px;
 }
+.btn-primary:hover {
+  background-color: #3a86f5;
+}
 .Weather .btn-location {
-  border: 1px solid black;
+  border: 1px solid navy;
   border-radius: 25px;
   background-color: white;
   margin: 10px 0px 20px 0px;
   padding: 1px 6px 1px 6px;
 }
+.btn-location:hover {
+  background-color: #3a86f5;
+}
 .Weather .dayTime {
   margin-top: 20px;
 }
 .Weather .city {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .Weather .temperature {
   font-size: 30px;
 }
+.Weather .description {
+  font-size: 20px;
+}
 .Weather .windHumidity {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  font-size: 17px;
 }
 .Weather .forecastDays {
   display: flex;
