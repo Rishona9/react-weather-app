@@ -1,6 +1,6 @@
 import React from "react";
 import "./Weather.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Weather() {
   return (
@@ -17,7 +17,7 @@ export default function Weather() {
           </div>
           <div class="col">
             <input type="submit" value="Search" className="btn btn-primary" />
-            <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
             <input
               type="submit"
               value="Use location"
@@ -29,7 +29,7 @@ export default function Weather() {
       <p className="dayTime">Monday 4:20pm</p>
       <p className="city">Cleveland</p>
       <p className="temperature">65°F</p>
-      <p>☀️</p>
+      <p className="icon">☀️</p>
       <p className="description">Sunny</p>
 
       <div className="row windHumidity">
