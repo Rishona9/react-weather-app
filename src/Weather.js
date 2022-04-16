@@ -11,24 +11,25 @@ export default function Weather() {
               type="search"
               placeholder="Enter city..."
               autocomplete="off"
-              class="form-control"
+              className="form-control cityInput"
             />
           </div>
-          <div className="col-1">
-            <input type="submit" value="Search" />
-          </div>
-          <div className="col">
-            <input type="submit" value="Current Location" />
+          <div class="col">
+            <button type="submit" class="btn btn-primary" />
+            <i className="fa-solid fa-magnifying-glass" />
+            <button type="button" class="btn btn-location"></button>
           </div>
         </div>
       </form>
-      <p>Monday 4:20pm</p>
-      <p>Cleveland</p>
+      <p className="dayTime">Monday 4:20pm</p>
+      <p className="city">Cleveland</p>
+
+      <p className="temperature">65° F</p>
+      <p className="feelsLike">Feels Like: 58° F</p>
+
       <p>☀️</p>
-      <p>65° F</p>
-      <p>Feels Like: 58° F</p>
       <p>Sunny</p>
-      <div className="row">
+      <div className="row windHumidity">
         <div className="col-3">
           <p>Wind: 10mph</p>
         </div>
@@ -36,7 +37,7 @@ export default function Weather() {
           <p>Humidity: 45%</p>
         </div>
       </div>
-      <div className="row">
+      <div className="row forecastDays">
         <div className="col-2">
           <p>MON</p>
         </div>
@@ -53,7 +54,7 @@ export default function Weather() {
           <p>FRI</p>
         </div>
       </div>
-      <div className="row">
+      <div className="row forecastIcons">
         <div className="col-2">
           <p>☀️</p>
         </div>
@@ -70,7 +71,7 @@ export default function Weather() {
           <p>☁️</p>
         </div>
       </div>
-      <div className="row">
+      <div className="row forecastMinMax">
         <div className="col-2">
           <p>55° / 40°</p>
         </div>
