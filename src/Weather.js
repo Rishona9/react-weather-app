@@ -15,26 +15,31 @@ export default function Weather() {
             />
           </div>
           <div class="col">
-            <button type="submit" class="btn btn-primary" />
-            <i className="fa-solid fa-magnifying-glass" />
-            <button type="button" class="btn btn-location"></button>
+            <input type="submit" className="btn btn-light" value="Search" />
+
+            <input
+              type="button"
+              className="btn btn-location"
+              value="Use location"
+            ></input>
           </div>
         </div>
       </form>
       <p className="dayTime">Monday 4:20pm</p>
       <p className="city">Cleveland</p>
-
       <p className="temperature">65° F</p>
-      <p className="feelsLike">Feels Like: 58° F</p>
-
       <p>☀️</p>
       <p>Sunny</p>
+
       <div className="row windHumidity">
         <div className="col-3">
           <p>Wind: 10mph</p>
         </div>
         <div className="col-3">
           <p>Humidity: 45%</p>
+        </div>
+        <div className="col-3">
+          <p className="feelsLike">Feels Like: 58° F</p>
         </div>
       </div>
       <div className="row forecastDays">
