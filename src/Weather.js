@@ -16,12 +16,12 @@ export default function Weather() {
             />
           </div>
           <div class="col">
-            <input type="submit" className="btn btn-light" />
+            <input type="submit" value="Search" className="btn btn-primary" />
             <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
             <input
-              type="button"
-              className="btn btn-location"
+              type="submit"
               value="Use location"
+              className="btn btn-location"
             ></input>
           </div>
         </div>

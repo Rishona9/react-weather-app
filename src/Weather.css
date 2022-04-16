@@ -1,10 +1,28 @@
 .Weather {
   border: 2px solid black;
+  border-radius: 20px;
   max-width: 600px;
   text-align: center;
 }
 .Weather .cityInput {
   border: 1px solid black;
+  border-radius: 25px;
+  padding: 1px 6px 1px 6px;
+  margin: 10px 0px 20px 10px;
+}
+.Weather .btn-primary {
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  margin: 10px 5px 20px 0px;
+  padding: 1px 6px 1px 6px;
+}
+.Weather .btn-location {
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: white;
+  margin: 10px 0px 20px 0px;
   padding: 1px 6px 1px 6px;
 }
 .Weather .dayTime {
@@ -20,12 +38,12 @@
 .Weather .windHumidity {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .Weather .forecastDays {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .Weather .forecastIcons {
   display: flex;
