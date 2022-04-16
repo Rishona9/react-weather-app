@@ -1,8 +1,9 @@
 .Weather {
   border: 2px solid black;
-  border-radius: 20px;
+  border-radius: 15px;
   max-width: 600px;
   text-align: center;
+  margin: 20px auto;
 }
 .Weather .cityInput {
   border: 1px solid black;
