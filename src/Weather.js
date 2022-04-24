@@ -63,19 +63,19 @@ export default function Weather(props) {
 
         <div className="row forecastDays">
           <div className="col-2">
-            <p>MON</p>
+            <p>Mon</p>
           </div>
           <div className="col-2">
-            <p>TUES</p>
+            <p>Tues</p>
           </div>
           <div className="col-2">
-            <p>WED</p>
+            <p>Wed</p>
           </div>
           <div className="col-2">
-            <p>THU</p>
+            <p>Thur</p>
           </div>
           <div className="col-2">
-            <p>FRI</p>
+            <p>Fri</p>
           </div>
         </div>
         <div className="row forecastIcons">
