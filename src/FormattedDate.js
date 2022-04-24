@@ -19,9 +19,17 @@ export default function FormattedDate(props) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  return (
-    <div>
-      {day} {hours}:{minutes}
-    </div>
-  );
+  if (props.date.getHours >= 12) {
+    return (
+      <div>
+        {day} {hours}:{minutes}am
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        {day} {hours}:{minutes}pm
+      </div>
+    );
+  }
 }
