@@ -3,7 +3,6 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 
 import "./Weather.css";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -60,62 +59,10 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-
-        <div className="row forecastDays">
-          <div className="col-2">
-            <p>Mon</p>
-          </div>
-          <div className="col-2">
-            <p>Tues</p>
-          </div>
-          <div className="col-2">
-            <p>Wed</p>
-          </div>
-          <div className="col-2">
-            <p>Thur</p>
-          </div>
-          <div className="col-2">
-            <p>Fri</p>
-          </div>
-        </div>
-        <div className="row forecastIcons">
-          <div className="col-2">
-            <p>☀️</p>
-          </div>
-          <div className="col-2">
-            <p>⛅</p>
-          </div>
-          <div className="col-2">
-            <p>🌧️</p>
-          </div>
-          <div className="col-2">
-            <p>⛅</p>
-          </div>
-          <div className="col-2">
-            <p>☁️</p>
-          </div>
-        </div>
-        <div className="row forecastMinMax">
-          <div className="col-2">
-            <p>55° / 40°</p>
-          </div>
-          <div className="col-2">
-            <p>55° / 40°</p>
-          </div>
-          <div className="col-2">
-            <p>55° / 40°</p>
-          </div>
-          <div className="col-2">
-            <p>55° / 40°</p>
-          </div>
-          <div className="col-2">
-            <p>55° / 40°</p>
-          </div>
-        </div>
       </div>
     );
   } else {
     search();
-    return "Loading....";
+    return "Loading...";
   }
 }
