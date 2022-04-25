@@ -58,17 +58,3 @@
   margin-top: 50px;
   font-size: 17px;
 }
-.Weather .forecastDays {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-.Weather .forecastIcons {
-  display: flex;
-  justify-content: center;
-}
-.Weather .forecastMinMax {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}

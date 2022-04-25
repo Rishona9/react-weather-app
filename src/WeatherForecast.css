@@ -1,0 +1,8 @@
+.WeatherForecast .WeatherForecast-day {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.WeatherForecast .WeatherForecast-temperatures {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
