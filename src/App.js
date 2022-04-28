@@ -15,6 +15,13 @@ export default function App() {
             rel="noopener noreferrer"
           >
             open-source
+          </a>{" "}
+          <a
+            href="https://dapper-pithivier-acdbbe.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            and hosted on Netlify
           </a>
         </footer>
       </div>
