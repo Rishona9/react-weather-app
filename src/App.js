@@ -14,7 +14,7 @@ export default function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            open-source
+            open-source {""}
           </a>
           and{" "}
           <a
