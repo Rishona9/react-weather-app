@@ -11,6 +11,11 @@
   );
   font-weight: 575;
 }
+.Weather .searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .Weather .cityInput {
   border: 1px solid navy;
   border-radius: 25px;
