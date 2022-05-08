@@ -4,6 +4,7 @@
 .App footer {
   text-align: center;
   margin-top: 40px;
+  text-decoration: none;
 }
 .App a {
   text-decoration: none;
