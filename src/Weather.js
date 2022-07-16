@@ -9,6 +9,18 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
+    // Get the timezone offset in milliseconds from the UTC (in milliseconds)
+    const timezoneOffset =
+      new Date(response.data.dt * 1000).getTimezoneOffset() * 60 * 1000;
+
+    // Find current UTC time in epoch (in milliseconds)
+    const currentUTCTime = response.data.dt * 1000 + timezoneOffset;
+
+    // Now, get the time in the searched city by adding the
+    // timezone offset (in milliseconds) to the currentUTCTime
+    const searchedCityTime = new Date(
+      currentUTCTime + response.data.timezone * 1000
+    );
     setWeatherData({
       ready: true,
       coordinates: response.data.coord,
