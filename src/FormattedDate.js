@@ -22,13 +22,13 @@ export default function FormattedDate(props) {
   if (props.date.getHours >= 12) {
     return (
       <div>
-        {day} {hours}:{minutes}pm
+        {day} {hours}:{minutes} pm
       </div>
     );
   } else {
     return (
       <div>
-        {day} {hours}:{minutes}am
+        {day} {hours}:{minutes} am
       </div>
     );
   }
